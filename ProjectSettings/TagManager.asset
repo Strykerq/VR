@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Right Hand
   - Left Hand
+  - Target
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Hide for Mirror\
   - Water
   - UI
   - Player
