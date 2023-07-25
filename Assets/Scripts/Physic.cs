@@ -10,20 +10,11 @@ public class Physic : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject)
         {
-            rb.AddForce(transform.up * _bulletForce, ForceMode.Impulse);
-          
-        }
-        
+            rb.AddForce(transform.up * _bulletForce, ForceMode.Impulse);         
+        }       
     }
 }

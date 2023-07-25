@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,13 +6,8 @@ public class Movement : MonoBehaviour
     private float _speed = 2f;
     private bool _isMoving = true;
     public Slider speedSlider;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+  
+    public void Update()
     {
         _speed = speedSlider.value;
 
@@ -34,9 +27,6 @@ public class Movement : MonoBehaviour
         else if (transform.position.x < -3.7f)
         {
             _isMoving = true;
-        }
-
-
-        
+        }        
     }
 }

@@ -1,23 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GameMenumanager : MonoBehaviour
+public class GameMenuManager : MonoBehaviour
 {
-    public GameObject menu;
+    public GameObject Menu;
     public InputActionProperty showButton;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+   
+    private void Update()
     {
         if (showButton.action.WasPressedThisFrame())
         {
-            menu.SetActive(!menu.activeSelf);
+            Menu.SetActive(!Menu.activeSelf);
         }
     }
 }

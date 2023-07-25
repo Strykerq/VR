@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -18,14 +16,8 @@ public class ActivateTeleportationRay : MonoBehaviour
     public XRRayInteractor leftRay;
     public XRRayInteractor rightRay;
 
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+   
+    public void Update()
     {
         bool isLeftRayHovering = leftRay.TryGetHitInfo(out Vector3 leftpos, out Vector3 leftnormal, out int leftnumber, out bool leftValid);
 
